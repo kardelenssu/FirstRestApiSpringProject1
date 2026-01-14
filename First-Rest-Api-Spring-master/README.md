@@ -1,5 +1,6 @@
 # First REST API Spring (Task 2)
 
+
 This is a backend-only application developed for the **Spring Framework Apps** course. It implements a fully functional REST API for managing products using **Spring Boot**, **Spring Data JPA**, and **H2 Database**.
 
 ## 🏗 Project Architecture
@@ -21,6 +22,11 @@ The project follows a layered architecture to ensure separation of concerns:
 * **Lombok:** Boilerplate code reduction
 
 ## 🧪 API Documentation & Usage Scenarios
+
+The Product Controller exposes **two different GET endpoints**:
+
+* **GET /api/v1/products** → Find all products
+* **GET /api/v1/products/{id}** → Find product by ID
 
 The API is documented using **Swagger UI**. Below are tested use cases demonstrating **CRUD operations** and **Error Handling**.
 
@@ -50,7 +56,7 @@ Creating a new product named **macbook**. The server returns **201 Created**.
 
 ---
 
-### 3. Read Product (GET)
+### 3. Read Product (GET by ID)
 
 **Endpoint:** `/api/v1/products/{id}`
 
@@ -66,7 +72,17 @@ Fetching the product with ID `1`. The server returns **200 OK**.
 
 ---
 
-### 4. Update Product (PUT)
+### 4. Read All Products (GET)
+
+**Endpoint:** `/api/v1/products`
+
+Fetching **all products** in the system using the GET method. The server returns **200 OK** with a list of products.
+
+![Get All Products](screenshots/10.png)
+
+---
+
+### 5. Update Product (PUT)
 
 **Endpoint:** `/api/v1/products/{id}`
 
@@ -115,4 +131,4 @@ Demonstration of the custom **Exception Handler**. When trying to access or dele
    http://localhost:8080/console
    ```
 **Author:** Miray Büyüktepe
- 
+   
