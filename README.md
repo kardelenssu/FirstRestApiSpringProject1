@@ -10,7 +10,8 @@ This project represents the **Task 1** milestone of the "First REST API Spring" 
 ## 📸 Output Screenshot
 **Requirement:** The application must display the welcome message on `localhost:8080`.
 
-![Task 1 Browser Output](screenshots/01-task1-browser.png)
+<img width="2560" height="1432" alt="image" src="https://github.com/user-attachments/assets/613f6323-fd2b-40d3-8fe5-572f657ec452" />
+
 
 ## 🛠 Technologies Used
 * **Java 17**
